@@ -1,0 +1,81 @@
+2023-05-10 23:31:16 - newlearn.py - INFO - Input is : [72.8777, 19.076]
+2023-05-10 23:31:16 - newlearn.py - INFO - Type of input: <class 'list'> 
+2023-05-10 23:31:16 - newlearn.py - INFO - Input: [72.8777, 19.076] 
+2023-05-10 23:31:16 - newlearn.py - INFO - Length of input: 2 
+2023-05-10 23:31:16 - newlearn.py - INFO - First element in input is: 72.8777
+2023-05-10 23:31:16 - newlearn.py - INFO - Input region is a Point
+2023-05-10 23:31:18 - newlearn.py - INFO - time for is_larger : 0.00019 
+2023-05-10 23:31:18 - newlearn.py - INFO - time for reg check : 0.00054 
+2023-05-10 23:31:20 - newlearn.py - INFO - Time taken for organic_carbon : 2.04345 
+2023-05-10 23:31:20 - newlearn.py - INFO - time for population : 1.99704
+2023-05-10 23:31:20 - newlearn.py - INFO - Time taken for soil_bulk_density : 2.04507 
+2023-05-10 23:31:20 - newlearn.py - INFO - Time for max_temp : 1.99359 
+2023-05-10 23:31:20 - newlearn.py - INFO - Time taken for soil_texture : 2.02809 
+2023-05-10 23:31:20 - newlearn.py - INFO - Time for soil_water_content : 2.04556 
+2023-05-10 23:31:20 - newlearn.py - INFO - TIme taken for sand_fraction : 2.07155 
+2023-05-10 23:31:20 - newlearn.py - INFO - Time for soil_pH : 2.06198 
+2023-05-10 23:31:20 - newlearn.py - INFO - soil_great_group_data: 429 
+2023-05-10 23:31:20 - newlearn.py - INFO - Time for soil_group :  2.04564 
+2023-05-10 23:31:20 - newlearn.py - INFO - Time taken for climate : 2.12764 
+2023-05-10 23:31:21 - newlearn.py - INFO - Time taken for cloud : 3.0096 
+2023-05-10 23:31:22 - newlearn.py - INFO - Time for min_temp: 3.40801
+2023-05-10 23:31:22 - newlearn.py - INFO - Time taken for rainfall : 4.02538 
+2023-05-10 23:31:22 - newlearn.py - INFO - Time elapesed until before wait line : 5.87947 
+2023-05-10 23:31:22 - newlearn.py - INFO - Time elapesed until after wait line : 0.00036 
+2023-05-10 23:31:22 - newlearn.py - INFO -  Time for main code :5.88005 
+2023-05-10 23:31:22 - newlearn.py - INFO - time until main passing : 5.88114 
+2023-05-10 23:31:22 - newlearn.py - INFO - Time for calculate 5.88128
+2023-05-10 23:33:27 - newlearn.py - INFO - Input is : [72.8777, 19.076]
+2023-05-10 23:33:27 - newlearn.py - INFO - Type of input: <class 'list'> 
+2023-05-10 23:33:27 - newlearn.py - INFO - Input: [72.8777, 19.076] 
+2023-05-10 23:33:27 - newlearn.py - INFO - Length of input: 2 
+2023-05-10 23:33:27 - newlearn.py - INFO - First element in input is: 72.8777
+2023-05-10 23:33:27 - newlearn.py - INFO - Input region is a Point
+2023-05-10 23:33:29 - newlearn.py - INFO - time for is_larger : 0.00019 
+2023-05-10 23:33:29 - newlearn.py - INFO - time for reg check : 0.00124 
+2023-05-10 23:33:31 - newlearn.py - INFO - time for population : 1.79591
+2023-05-10 23:33:31 - newlearn.py - INFO - Time for soil_pH : 1.8306 
+2023-05-10 23:33:31 - newlearn.py - INFO - Time taken for climate : 1.86769 
+2023-05-10 23:33:31 - newlearn.py - INFO - Time taken for organic_carbon : 1.86341 
+2023-05-10 23:33:31 - newlearn.py - INFO - Time taken for soil_texture : 1.8307 
+2023-05-10 23:33:31 - newlearn.py - INFO - soil_great_group_data: 429 
+2023-05-10 23:33:31 - newlearn.py - INFO - Time for soil_group :  1.82709 
+2023-05-10 23:33:31 - newlearn.py - INFO - Time for min_temp: 1.80765
+2023-05-10 23:33:31 - newlearn.py - INFO - TIme taken for sand_fraction : 1.87873 
+2023-05-10 23:33:31 - newlearn.py - INFO - Time taken for soil_bulk_density : 1.87394 
+2023-05-10 23:33:31 - newlearn.py - INFO - Time for soil_water_content : 1.86324 
+2023-05-10 23:33:31 - newlearn.py - INFO - Time for max_temp : 1.82745 
+2023-05-10 23:33:32 - newlearn.py - INFO - Time taken for rainfall : 3.61977 
+2023-05-10 23:33:34 - newlearn.py - INFO - Time taken for cloud : 5.05063 
+2023-05-10 23:33:34 - newlearn.py - INFO - Time elapesed until before wait line : 6.98264 
+2023-05-10 23:33:34 - newlearn.py - INFO - Time elapesed until after wait line : 0.00036 
+2023-05-10 23:33:34 - newlearn.py - INFO -  Time for main code :6.98323 
+2023-05-10 23:33:34 - newlearn.py - INFO - time until main passing : 6.98442 
+2023-05-10 23:33:34 - newlearn.py - INFO - Time for calculate 6.98459
+2023-05-10 23:34:27 - newlearn.py - INFO - Input is : [[80.22024966365439, 24.286862300507], [80.22054202443701, 24.286918531518083], [80.2204696047936, 24.286527358751147], [80.22024966365439, 24.286862300507]]
+2023-05-10 23:34:27 - newlearn.py - INFO - Type of input: <class 'list'> 
+2023-05-10 23:34:27 - newlearn.py - INFO - Input: [[80.22024966365439, 24.286862300507], [80.22054202443701, 24.286918531518083], [80.2204696047936, 24.286527358751147], [80.22024966365439, 24.286862300507]] 
+2023-05-10 23:34:27 - newlearn.py - INFO - Length of input: 4 
+2023-05-10 23:34:27 - newlearn.py - INFO - First element in input is: [80.22024966365439, 24.286862300507]
+2023-05-10 23:34:27 - newlearn.py - INFO - Input region is polygon
+2023-05-10 23:34:29 - newlearn.py - INFO - time for is_larger : 0.00016 
+2023-05-10 23:34:29 - newlearn.py - INFO - time for reg check : 0.00049 
+2023-05-10 23:34:31 - newlearn.py - INFO - Time taken for organic_carbon : 1.83587 
+2023-05-10 23:34:31 - newlearn.py - INFO - Time taken for soil_texture : 1.79949 
+2023-05-10 23:34:31 - newlearn.py - INFO - Time for soil_water_content : 1.84443 
+2023-05-10 23:34:31 - newlearn.py - INFO - soil_great_group_data: 429 
+2023-05-10 23:34:31 - newlearn.py - INFO - Time for soil_group :  1.85153 
+2023-05-10 23:34:31 - newlearn.py - INFO - Time for max_temp : 1.76575 
+2023-05-10 23:34:31 - newlearn.py - INFO - Time taken for soil_bulk_density : 1.88743 
+2023-05-10 23:34:31 - newlearn.py - INFO - TIme taken for sand_fraction : 1.91633 
+2023-05-10 23:34:31 - newlearn.py - INFO - Time for soil_pH : 1.90846 
+2023-05-10 23:34:31 - newlearn.py - INFO - time for population : 2.05536
+2023-05-10 23:34:32 - newlearn.py - INFO - Time for min_temp: 2.51391
+2023-05-10 23:34:33 - newlearn.py - INFO - Time taken for cloud : 3.96187 
+2023-05-10 23:34:34 - newlearn.py - INFO - Time taken for rainfall : 4.40554 
+2023-05-10 23:34:37 - newlearn.py - INFO - Time taken for climate : 7.78051 
+2023-05-10 23:34:37 - newlearn.py - INFO - Time elapesed until before wait line : 9.55925 
+2023-05-10 23:34:37 - newlearn.py - INFO - Time elapesed until after wait line : 0.00037 
+2023-05-10 23:34:37 - newlearn.py - INFO -  Time for main code :9.55996 
+2023-05-10 23:34:37 - newlearn.py - INFO - time until main passing : 9.56075 
+2023-05-10 23:34:37 - newlearn.py - INFO - Time for calculate 9.5609
