@@ -4,8 +4,8 @@ import concurrent.futures
 # import logging
 import os
 from fastapi import FastAPI , Request
-# from fastapi.middleware.cors import CORSMiddleware
-# import uvicorn
+from fastapi.middleware.cors import CORSMiddleware
+import uvicorn
 # import datetime
 import json
 from fastapi.responses import JSONResponse
@@ -37,19 +37,33 @@ def initialise():
     end = timer()
     print("Time for initialisation : ", end-start)
 
-initialise()
+
+
+
 
 app = FastAPI()
 
-# origins = [    "http://localhost:5000",    "http://localhost:8001",]
 
-# app.add_middleware(
-#     CORSMiddleware,
-#     allow_origins=origins,
-#     allow_credentials=True,
-#     allow_methods=["*"],
-#     allow_headers=["*"],
-# )
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+@app.get("/initialize-ee")
+def initialize_ee():
+# Initialize Earth Engine
+    if not ee.data._credentials:
+        print("Earth Engine API not pre-initialized")
+        initialise()
+        print("Earth Engine API initialized now!")
+    else:
+        print("Earth Engine API already initialized!")
+        return {"message" : "Earth Engine already initialized"}
+    # Return a success message
+    return {"message": "Earth Engine initialized successfully"}
 
 @app.get("/")
 async def read_root():
@@ -57,6 +71,12 @@ async def read_root():
 
 @app.post("/all")
 async def get_all(request: Request):
+    if not ee.data._credentials:
+        print("Earth Engine API not pre-initialized")
+        initialise()
+        print("Earth Engine API initialized now!")
+    else:
+        print("Earth Engine API already initialized!")
     def population(population_image,region,centroid):
             start = timer()
             scale = 927.6624232772793
@@ -863,10 +883,10 @@ async def get_all(request: Request):
     # print("Request arg type: ", type(input))
     # print(input)
     result = json.loads(input) # Load the JSON input into a Python object
-    print("Input is : %s",result)
-    print("Type of input: %s ", type(result))
-    print("Input: %s ", result)
-    print("Length of input: %s ",str(len(result)))
+    print("Input is : ",result)
+    print("Type of input:  ", type(result))
+    print("Input:  ", result)
+    print("Length of input:  ",str(len(result)))
     print("First element in input is: %s",result[0])
     inputlength = len(result)
     #Check whether the input is apoint or a polygon
@@ -878,15 +898,17 @@ async def get_all(request: Request):
         region = ee.Geometry.Point(result)
         print("Input region is a Point")
     ans = v2_parallel_point(region)    
-    print("time until main passing : %s ",round(timer()-start,5))
+    print("time until main passing :  ",round(timer()-start,5))
      # Calculate the data for the region using the Earth Engine API
     # print("In calculate method :")
     end = timer()
-    print("Time for calculate %s", round(end-start,5))
-    return JSONResponse(ans)  # Return a JSON object instead of a JSON string
+    print("Time for calculate ", round(end-start,5))
+    json_res = JSONResponse(ans) 
+    print("time for ser/desr",round(timer()-end,5))
+    return  json_res# Return a JSON object instead of a JSON string
 
-# if __name__ == "__main__":
-#     uvicorn.run(app, host="localhost", port=8081)
+if __name__ == "__main__":
+    uvicorn.run(app, host="localhost", port=8081)
 
 
 
