@@ -1,3 +1,5 @@
 /.vscode
 /app/fastenv
-project-xyz-383203.json
+venv
+*.json
+.env

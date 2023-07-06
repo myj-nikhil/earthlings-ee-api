@@ -9,6 +9,9 @@ import uvicorn
 # import datetime
 import json
 from fastapi.responses import JSONResponse
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 
@@ -23,13 +26,13 @@ from fastapi.responses import JSONResponse
 # file_handler.setFormatter(formatter)
 
 # app_logger.addHandler(file_handler)
-file_path = os.path.join(os.path.dirname(__file__), 'project-xyz-383203.json')
+file_path = os.path.join(os.path.dirname(__file__), 'service-account-key.json')
 
 
 def initialise():
     start = timer()
     # Add the service account mail ID from Google Cloud
-    service_account = 'project-xyz@project-xyz-383203.iam.gserviceaccount.com'
+    service_account = os.environ.get('GCLOUD_SERVICE_ACCOUNT')
     # Give the location of the privatekey file of the service account
     credentials = ee.ServiceAccountCredentials(
         service_account, file_path)
