@@ -11,4 +11,4 @@ Configuting Gcloud and EarthEngine :
 4. Enable Google Maps API and Google Earth API to the created project at your gcloud console.
 5. Go to the google cloud project -> IAM & ADMIN -> Service Accounts -> Service account mail (Copy this service accountmail and populate inside .env) -> Click on 3 dots under the Actions tab -> Manage Keys -> Add Key -> Create new key -> Download the JSON
 6. Copy the contents inside the downloaded JSON and paste them inside service-account-key.json.
-**Make sure the service account mail in .env and the json key downloaded are of the same service account**
+7. **!!CAUTION !! Make sure the service account mail in .env and the json key downloaded are of the same service account**
