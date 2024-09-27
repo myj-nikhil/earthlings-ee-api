@@ -3,7 +3,7 @@ API to get Earth Engine data
 
 This can be started locally by using Docker.
 
-Configuting Gcloud and EarthEngine :
+Configuring Gcloud and EarthEngine :
 
 1. Sign up to https://cloud.google.com/
 2. Create a new gcloud project and make sure that the billing account linked to the project supports both Google Maps and Google Earth Engine.
